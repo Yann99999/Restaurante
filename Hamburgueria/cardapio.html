@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos/cardapio.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="stylesheet" href="icomoon/style.css">
+    
+    <title>Cardápio</title>
+<link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="img/logo.png" alt="logo do site" class="logo">
+            <ul class="menu-ul">
+                <li><a class="link-header" href="">HOME</a></li>
+                <li><a class="link-header" href="contato.html">CONTATOS</a></li>
+                <li><span style="color: rgb(231, 161, 11);">CARDÁPIO</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="interno">
+        <h1 class="hidden title" >Cardápio</h1>
+        <a href="#cardapio" class="hidden to-hide btn-ver-cardapio"><span class="icon-circle-down"></span></a>
+    </section>
+
+    <main id="primary-content" class="conteudo-principal">
+ 
+        <section class="container-promocoes">
+            <h2>Ofertas da semana</h2>
+            <div class="promocao box">
+                <h3>Refri infinito</h3>
+                <p>Na compra de qualquer combo, ganhe refil de refrigerante.</p>
+                <p><i>Promoção válida de segunda à quarta-feira</i></p>
+            </div>
+            <div class="promocao2 box">
+                <h3>Doce pra geral</h3>
+                <p>Ganhe uma sobremesa a cada combo comprado</p>
+                <p><i>Promoção válida somente às quintas-feiras</i></p>
+            </div>
+            <div class="promocao box">
+                <h3>Rodízio</h3>
+                <p>Rodízio de mini-hambúrgueres (todos os hambúrgueres do cardápio estarão disponíveis) por apenas R$
+                    39,90.</p>
+                <p><i>Promoção válida somente aos fins de semana</i></p>
+            </div>
+        </section>
+
+        <nav id="cardapio" class="cardapio">
+            <ul class="menu-cardapio">
+                <li>
+                    <button id="burguer" class="btn-cardapio"><span class="to-hide">Burguers</span><img
+                            src="img/hamburguer.png" alt="" class="icon"></button>
+                </li>
+                <li>
+                    <button id="porcao" class="btn-cardapio"><span class="to-hide">Porções</span><img
+                            src="img/batatas-fritas.png" alt="" class="icon"></button>
+                </li>
+                <li>
+                    <button id="bebida" class="btn-cardapio"><span class="to-hide">Bebidas</span><img
+                            src="img/bebida-alcoolica.png" alt="" class="icon"></button>
+                </li>
+                <li>
+                    <button id="sobremesa" class="btn-cardapio"><span class="to-hide">Sobremesas</span><img
+                            src="img/sobremesa.png" alt="" class="icon"></button>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="container-cardapio" class="cardapio-container">
+            <div class="hamburguer">
+
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/xburguer.jpg" class="img-hamburguer" alt="imagem de hamburguer">
+                        <h5 class="text">Simplão</h5>
+                        <p class="text">R$17,90</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou Simplão no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/cheddar.webp" class="img-hamburguer" alt="imagem de hamburguer">
+                        <h5 class="text">Cheddoso</h5>
+                        <p class="text">R$21,90</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou Cheddoso no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/bacon.jpg" class="img-hamburguer" alt="imagem de hamburguer">
+                        <h5 class="text">Full-bacon</h5>
+                        <p class="text">R$21,90</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou Full-bacon no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/salada.jpg" class="img-hamburguer" alt="imagem de hamburguer">
+                        <h5 class="text">"Fitness"</h5>
+                        <p class="text">R$19,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou hamburguer Fitness no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/galo.jpg" class="img-hamburguer" alt="imagem de hamburguer">
+                        <h5 class="text">Galudo</h5>
+                        <p class="text">R$21,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou Galudo no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/salmao.webp" class="img-hamburguer" alt="imagem de hamburguer">
+                        <h5 class="text">X-Aquático</h5>
+                        <p class="text">R$23,90</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou X-Aquático no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/cor.jpeg" class="img-hamburguer" alt="imagem de hamburguer">
+                        <h5 class="text">Cor sim, cor não</h5>
+                        <p class="text">R$20,00</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou hamburguer colorido no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/picanha.jpg" class="img-hamburguer" alt="imagem de hamburguer">
+                        <h5 class="text">X-Picanha</h5>
+                        <p class="text">R$25,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou X-Picanha no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/monstro.webp" class="img-hamburguer" alt="imagem de hamburguer">
+                        <h5 class="text">X-Infarto</h5>
+                        <p class="text">R$49,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou X-Infarto no carrinho')">+</button>
+                </div>
+            </div>
+
+
+            <div class="porcao">
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/batata.png" class="img-hamburguer" alt="imagem de porção">
+                        <h5 class="text">Batata com cheddar e bacon</h5>
+                        <p class="text">R$22,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou porção de batata gourmet no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/onion.jpg" class="img-hamburguer" alt="imagem de porção">
+                        <h5 class="text">Anéis de Cebola</h5>
+                        <p class="text">R$19,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou porção de anéis de cebola no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/asas.jpg" class="img-hamburguer" alt="imagem de porção">
+                        <h5 class="text">Asas de Frango</h5>
+                        <p class="text">R$34,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou porção de asas de frango no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/queijo.jpg" class="img-hamburguer" alt="imagem de porção">
+                        <h5 class="text">Espetinho de Queijo</h5>
+                        <p class="text">R$39,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou porção de espetinho de queijo no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/peixe.jpg" class="img-hamburguer" alt="imagem de porção">
+                        <h5 class="text">Iscas de Peixe</h5>
+                        <p class="text">RS$45,00</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou porção de iscas de peixe no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/mandioca.jpg" class="img-hamburguer" alt="imagem de porção">
+                        <h5 class="text">Carne de Sol e Mandioca</h5>
+                        <p class="text">R$89,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou porção de mandioca frita e carne de sol no carrinho')">+</button>
+                </div>
+            </div>
+
+
+
+            <div class="bebidas">
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/refri.jpg" class="img-hamburguer" alt="imagem de bebida">
+                        <h5 class="text">Lata de Refri</h5>
+                        <p class="text">R$6,00</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou refrigerante no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/suco.jpg" class="img-hamburguer" alt="imagem de bebida">
+                        <h5 class="text">Suco Natural</h5>
+                        <p class="text">R$11,90</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou suco no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/milk.jpeg" class="img-hamburguer" alt="imagem de bebida">
+                        <h5 class="text">Milk-Shake</h5>
+                        <p class="text">17,90</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou Milk-Shake no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/cereveja.webp" class="img-hamburguer" alt="imagem de bebida">
+                        <h5 class="text">Cerveja Long Neck</h5>
+                        <p class="text">R$7,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou cerveja no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/agua.jpg" class="img-hamburguer" alt="imagem de bebida">
+                        <h5 class="text">Garrafa de Água</h5>
+                        <p class="text">R$3,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou garrafa de água no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/drink.jpg" class="img-hamburguer" alt="imagem de bebida">
+                        <h5 class="text">Drink</h5>
+                        <p class="text">R$15,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou Gin no carrinho')">+</button>
+                </div>
+            </div>
+            
+            <div class="sobremesa">
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/petit.jpg" class="img-hamburguer" alt="imagem de sobremesa">
+                        <h5 class="text">Petit Gateau</h5>
+                        <p class="text">R$23,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou Petit Gateau no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/pudim.jpg" class="img-hamburguer" alt="imagem de sobremesa">
+                        <h5 class="text">Pudim</h5>
+                        <p class="text">R$6,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou pudim no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/sorvete.jpg" class="img-hamburguer" alt="imagem de sobremesa">
+                        <h5 class="text">Sorvete</h5>
+                        <p class="text">R$8,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou sorvete no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/bolo.webp" class="img-hamburguer" alt="imagem de sobremesa">
+                        <h5 class="text">Bolo de Pote</h5>
+                        <p class="text">R$9,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou bolo de pote no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/pizza.jpg" class="img-hamburguer" alt="imagem de sobremesa">
+                        <h5 class="text">Pizza de Chocolate</h5>
+                        <p class="text">R$7,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Adicionou pizza de chocolate no carrinho')">+</button>
+                </div>
+                <div class="box-hambuguer">
+                    <div class="box-content">
+                        <img src="img/pave.webp" class="img-hamburguer" alt="imagem de sobremesa">
+                        <h5 class="text">Pavê</h5>
+                        <p class="text">R$8,99</p>
+                    </div>
+                    <button class="btn-add" onclick="alert('Ou pacumê?')">+</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="rodape">
+            <ul class="container-rodape">
+                <li>
+                    <div class="contatos-rodape">
+                        <h4 class="rodape-titulo">Fale com a gente!!!</h4>
+                        <ul class="icons-rodape">
+                            <li class="icone"><span class="icon-facebook"></span></li>
+                            <li class="icone"><span class="icon-instagram"></span></li>
+                            <li class="icone"><span class="icon-whatsapp"></span></li>
+                        </ul>
+                    </div>
+                </li>
+               
+                <li>
+                    <div class="itens-rodape cardapio">
+                        <h4 class="rodape-titulo to-hide">Cardapio</h4>
+                        <ul class="lista-rodape">
+                            <li class="lista-txt-rodape to-hide">Hambúrgueres</li>
+                            <li class="lista-txt-rodape to-hide">Porções</li>
+                            <li class="lista-txt-rodape to-hide">Bebidas</li>
+                            <li class="lista-txt-rodape to-hide">Sobremesas</li>
+                        </ul>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="itens-rodape institucional">
+                        <h4 class="rodape-titulo">Institucional</h4>
+                        <ul class="lista-rodape">
+                            <li class="lista-txt-rodape">Quem somos</li>
+                            <li class="lista-txt-rodape">Cardápio</li>
+                            <li class="lista-txt-rodape">Promoções</li>
+                            <li class="lista-txt-rodape">Seja franqueado</li>
+                            <li class="lista-txt-rodape">Contato</li>
+                        </ul>
+                    </div>
+                </li>
+                
+                
+            </ul>
+        </footer>
+        
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+
+
+$corPadraorgb: rgb(20, 18, 18);
+$corCardapiorgb: rgb(20, 18, 18);
+$alturaMenus: 80px;
+$tamFonteListas: 1.4em;
+$corFonteCardapio: rgb(231, 161, 11);
+
+
+*{
+    outline: none;
+    font-family: 'Kalam', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: $corCardapiorgb;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $corFonteCardapio;
+    border-radius: 20px;
+    border: 3px solid orange;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $corPadraorgb;
+    height: $alturaMenus;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+
+    .logo{
+        height: 180px;
+        width: 200px;
+        margin-left: 150px;
+    }
+
+    .menu-ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        li{
+            list-style-type: none;
+            margin-right: 80px;
+            font-size: $tamFonteListas;
+            font-weight: bolder;
+        }
+    }
+}
+.link-header {
+    text-decoration: none;
+    color: white;
+    transition: 0.70s;
+}
+.link-header:hover{
+    color: rgb(163, 163, 163);
+}
+.hidden{
+    visibility: hidden;
+}
+.interno{
+    background: #000;
+    background: url(https://images7.alphacoders.com/817/817988.jpg) no-repeat center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 300px 30px;
+    color: white;
+    flex-direction: column;
+
+    .title{
+        font-size: 3em;
+        text-transform: uppercase;
+        margin-bottom: 10%;
+        text-align: center;
+        font-weight: bolder;
+        color: rgb(255, 196, 0);
+        text-shadow: 0 0 20px;
+        animation-name: gradient;
+        animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+}
+.btn-ver-cardapio {
+    text-decoration: none;
+    text-align: center;
+    margin-top: -80px;
+    text-shadow: 0 0 .2em white;
+    transition: all 0.60s;
+}
+
+.btn-ver-cardapio:hover{
+    text-shadow: 0 0 1em white;
+}
+
+.conteudo-principal{
+    background: url(https://static.vecteezy.com/ti/vetor-gratis/p2/3988049-realista-preto-madeira-prancha-fundo-vetor.jpg) no-repeat center bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    overflow: hidden;
+
+    .container-promocoes{
+        visibility: hidden;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+
+        h2{
+            text-align: center;
+            font-size: 2.5em;
+            color: $corFonteCardapio;
+            text-decoration: underline wavy $corFonteCardapio;
+        }
+
+        .box{
+            width: 250px;
+            height: 150px;
+        }
+
+        .promocao{
+            margin-left: -50%;
+
+            h3{
+                font-size: 2em;
+                color: $corFonteCardapio;
+                text-decoration: underline wavy $corFonteCardapio;
+            }
+            p{
+                letter-spacing: 1;
+                font-size: 1.2em;
+            }
+        }
+        .promocao2{
+            margin-right: -50%;
+
+            h3{
+                font-size: 2em;
+                color: $corFonteCardapio;
+                text-decoration: underline wavy $corFonteCardapio;
+            }
+            p{
+                letter-spacing: 1;
+                font-size: 1.3em;
+
+                i{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+    .cardapio{
+        margin-top: 20%;
+        padding: 10px;
+        width: 100%;
+        background-color: $corCardapiorgb;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: sticky;
+        z-index: 1;
+
+
+        .menu-cardapio{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+
+            li{
+                list-style-type: none;
+                margin: 0 20%;
+            }
+        }
+    }
+}
+.btn-cardapio {
+    font-size: $tamFonteListas;
+    font-weight: bolder;
+    color: $corFonteCardapio;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.70s;
+}
+.btn-cardapio:hover{
+    color: orange;
+    transform: scale(1.1);
+    text-shadow: 0 0 2px gold;
+}
+
+.hamburguer{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+.porcao{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: none;
+}
+.bebidas{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: none;
+}
+.sobremesa{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: none;
+}
+
+.box-hambuguer{
+    margin: 50px;
+
+    .box-content{
+        border-radius: 10px;
+        border: 2px solid rgb(110, 110, 110);
+        overflow: hidden;
+        height: 380px;
+        box-shadow: 0 0 10px rgb(209, 209, 209);
+        display: grid;
+        place-items: center;
+        grid-template-areas: "main";
+
+        h5{
+            color: $corFonteCardapio;
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: -70px;
+        }
+    }
+    
+    .btn-add{
+        cursor: pointer;
+        background-color: goldenrod;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        margin-top: -25px;
+        margin-bottom: 30px;
+        margin-left: 43%;
+        border-radius: 50%;
+        border: none;
+        font-size: 2em;
+        transition: all .50s;
+        padding: 2px;
+    }
+}
+.box-content>*{
+    grid-area: main;
+}
+.box-content>.img-hamburguer{
+    width: 100%;
+    height: 100%;
+    transition: transform 400ms, filter 400ms;
+    object-fit: cover;
+    margin-top: -90px;
+    aspect-ratio: 1/1;
+}
+.box-content>.text {
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    transition: opacity 400ms, transform 400ms;
+}
+
+.box-content:is(:hover, :focus) > .img-hamburguer{
+    transform: scale(1.1);
+    filter: brightness(0.4);
+}
+.box-content:is(:hover, :focus) > .text{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.btn-add:hover{
+    background-color: $corFonteCardapio;
+    transform: scale(1.1);
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+
+.rodape{
+    margin-top: 10%;
+    background-color:$corCardapiorgb;
+    width: 100%;
+    height: 300px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+.container-rodape{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+.contatos-rodape{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .icons-rodape{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 30px;
+    }
+}
+.icone{
+    margin-left: 10px;
+    transition: all 0.60s;
+    cursor: pointer;
+}
+.icone:hover{
+    transform: scale(1.01);
+    transform: translateY(-5px);
+    color: $corFonteCardapio;
+}
+.lista-txt-rodape{
+    transition: all 0.60s;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.lista-txt-rodape:hover{
+    color: $corFonteCardapio;
+}
+.rodape-titulo{
+    font-size: 1.3em;
+    color: $corFonteCardapio;
+}
+.itens-rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .lista-rodape{
+        padding: 5px;
+        align-items: center;
+
+        li{
+            font-size: 1.2em;
+            margin-top: 5px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes gradient {
+    25% {
+        color: rgb(255, 174, 0);
+    }
+
+    50% {
+        color: $corFonteCardapio;
+    }
+
+    75% {
+        color: orange;
+    }
+
+    100% {
+        color: rgb(255, 187, 0);
+    }
+}
+
+
+@media (max-width: 850px) {
+    .hamburguer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .porcao{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3 1fr);
+    }
+    .bebidas{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3 1fr);
+    }
+    .sobremesa{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3 1fr);
+    }
+
+    .box-hambuguer{
+        margin: 50px;
+    }
+    .promocao{
+        margin-bottom: 200px;
+        margin-right: -50%;
+    }
+    .promocao2{
+        margin-bottom: 200px;
+        margin-left: -50%;
+    }
+    .logo{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .to-hide {
+        display: none;
+    }
+    
+    
+    .icon {
+        display: block;
+        align-items: center;
+        height: 35px;
+        width: 30px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .hamburguer{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6 1fr);
+    }
+    .porcao{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6 1fr);
+    }
+    .bebidas{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6 1fr);
+    }
+    .sobremesa{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6 1fr);
+    }
+
+    .box-hambuguer{
+        margin: 50px;
+    }
+    .logo{
+        display: none;
+    }
+    .menu-ul{
+        margin: 10% auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+    .to-hide{
+        display: none;
+    }
+    .icon{
+        display: block;
+        align-items: center;
+        height: 35px;
+        width: 30px;
+    }
+    .container-rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .institucional{display: none;}
+ 
+}
+
+@media (max-width:400px) {
+    .icon {
+        display: flex;
+        align-items: center;
+        height: 25px;
+        width: 20px;
+    }
+    .navbar{
+        margin: 0 auto;
+    }
+    .container-rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .institucional{
+        display: none;
+    }
+    .cardapio{
+        display: none;
+    }
+    .to-hide{
+        display: none;
+    }
+}

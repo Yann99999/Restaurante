@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos/contato.css">
+
+    <link rel="stylesheet" href="icomoon/style.css">
+    <title>Contatos</title>
+</head>
+<link rel="icon" href="img/logo.png">
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="img/logo.png" alt="logo do site" class="logo">
+            <ul class="menu-ul">
+                <li><a class="link-header" href="">HOME</a></li>
+                <li><span style="color: rgb(231, 161, 11);">CONTATOS</span></li>
+                <li><a class="link-header" href="cardapio.html">CARDÁPIO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="interno">
+        <h1 class="hidden title" >Contato</h1>
+    </section>
+
+    <main id="primary-content" class="conteudo-principal">
+
+        <div class="chamativo">
+            <h2 class="chamativo-title">FALE COM AGENTE</h2>
+            <h4>
+                NÃO SEJA TÍMIDO
+            </h4>
+                <p>
+                    Fique a vontade para entrar em contato conosco.
+                    Estamos abertos para discustir novas ideias.
+                </p>
+        </div>
+
+        <form>
+            <div class="nome">
+                <label for="nome">Nome</label>
+                <input type="texto" id="nome" name="nome_usuario" placeholder="Digite seu nome...">
+            </div>
+
+            <div class="email">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email_usuario" placeholder="email@email.com">
+            </div>
+
+            <div class="texto">
+                <label for="texto">Mensagem</label>
+                <textarea id="texto" name="texto_usuario" placeholder="Deixe sua mensagem" maxlength="1000"></textarea>
+            </div>
+
+            <div class="button">
+                <button type="submit" onclick="Enviar();" value="Enviar">Enviar</button>
+            </div> 
+        </form>
+
+
+        <div class="contatos-container">
+            <h5>Se preferir, fale com a gente por</h5>
+
+            <div class="contatos-box">
+                <div class="contatos-tel">
+                    <img src="img/icons8-telefone-64.png" alt="icone de telefone">
+                    <p>(11)4002-8922</p>
+                </div>
+                <div class="contatos-email">
+                    <img src="img/icons8-email-64.png" alt="icone de email">
+                    <p>hamburguer@gmail.com</p>
+                </div>
+            </div>
+            
+        </div>
+        
+
+
+    
+
+        <footer class="rodape">
+            <ul class="container-rodape">
+                <li>
+                    <div class="contatos-rodape">
+                        <h4 class="rodape-titulo">Fale com a gente!!!</h4>
+                        <ul class="icons-rodape">
+                            <li class="icone"><span class="icon-facebook"></span></li>
+                            <li class="icone"><span class="icon-instagram"></span></li>
+                            <li class="icone"><span class="icon-whatsapp"></span></li>
+                        </ul>
+                    </div>
+                </li>
+               
+                <li>
+                    <div class="itens-rodape cardapio">
+                        <h4 class="rodape-titulo to-hide">Cardapio</h4>
+                        <ul class="lista-rodape">
+                            <li class="lista-txt-rodape to-hide">Hambúrgueres</li>
+                            <li class="lista-txt-rodape to-hide">Porções</li>
+                            <li class="lista-txt-rodape to-hide">Bebidas</li>
+                            <li class="lista-txt-rodape to-hide">Sobremesas</li>
+                        </ul>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="itens-rodape institucional">
+                        <h4 class="rodape-titulo">Institucional</h4>
+                        <ul class="lista-rodape">
+                            <li class="lista-txt-rodape">Quem somos</li>
+                            <li class="lista-txt-rodape">Cardápio</li>
+                            <li class="lista-txt-rodape">Promoções</li>
+                            <li class="lista-txt-rodape">Seja franqueado</li>
+                            <li class="lista-txt-rodape">Contato</li>
+                        </ul>
+                    </div>
+                </li>
+                
+                
+            </ul>
+        </footer>
+        
+    </main>
+
+
+    <script>
+        function Enviar() {
+            var nome = document.getElementById("nome");
+            var email = document.getElementById("email");
+            var texto = document.getElementById("texto");
+            
+            if (nome.value == "" || email.value == "" || texto.value == "") 
+            { alert("Preencha todos os campos"); 
+        }
+            else {
+                alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+            }
+        }
+    </script>
+
+</body>
+</html>
